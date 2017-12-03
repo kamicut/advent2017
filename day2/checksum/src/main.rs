@@ -21,7 +21,7 @@ fn main() {
     });
 
     match checksum::run(&filename) {
-        Ok(count) => println!("Count: {}", count),
+        Ok(count) => println!("Part1: {}, Part2: {}", count.0, count.1),
         Err(e) => {
             println!("Application error: {}", e);
             process::exit(1);
